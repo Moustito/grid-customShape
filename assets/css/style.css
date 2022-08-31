@@ -4,7 +4,6 @@
   grid: auto-flow var(--s)/repeat(2, var(--s));
   gap: 10px;
   place-items: center;
-  margin: calc(var(--s) / 2);
   transform: rotate(45deg);
 }
 
