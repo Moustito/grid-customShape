@@ -4,14 +4,14 @@
     display: grid;
     gap: 10px;
     grid: auto-flow var(--s) / repeat(2, var(--s));
-        // grid-template-columns: repeat(2, var(--s));
-        // grid-template-rows: repeat(2, var(--s))
-
-        // grid: repeat(2,var(--s)) / repeat(2,var(--s));
+    place-items: center;
+    justify-content: center;
     
-        place-items: center;
+    transform: rotate(45deg);
   }
   .gallery > img {
     width: 100%; 
     object-fit: cover;
+    
+    transform: rotate(-45deg);
   }
