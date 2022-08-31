@@ -9,10 +9,10 @@
 }
 
 .gallery > img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transform: rotate(-45deg);
   -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
           clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  width: 141%; /* 100%*sqrt(2) = 141% */
 }
