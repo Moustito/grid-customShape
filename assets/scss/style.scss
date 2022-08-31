@@ -1,18 +1,16 @@
 .gallery {
     --s: 300px; /* controls the size */
-  
     display: grid;
     gap: 10px;
     grid: auto-flow var(--s) / repeat(2, var(--s));
     place-items: center;
-    justify-content: center;
     
-    transform: rotate(45deg);
+    // transform: rotate(45deg);
   }
   .gallery > img {
     width: 100%; 
     object-fit: cover;
     
-    transform: rotate(-45deg);
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%)
+    // transform: rotate(-45deg);
+    // clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%)
   }
