@@ -1,33 +1,9 @@
-.gallery {
-  --s: 300px; /* control the size */
-  display: grid;
-  grid: auto-flow var(--s)/repeat(2, var(--s));
-  gap: 10px;
-  place-items: center;
-  transform: rotate(45deg);
+.gallery > a {
+  text-decoration: none;
+  font-size: 100px;
+  color: black;
 }
 
-.gallery > img {
-  width: 141%; /* sqrt(2)*100% */
-  aspect-ratio: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  filter: grayscale(80%);
-  transform: scale(var(--_t, 1)) rotate(-45deg);
-  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-  cursor: pointer;
-  transition: 0.2s linear;
-}
-
-.gallery > img:hover {
-  filter: grayscale(0);
-  --_t: 1.075;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
+.gallery > a:hover {
+  color: red;
 }
