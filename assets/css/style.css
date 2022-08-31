@@ -2,7 +2,7 @@
   --s: 300px; /* controls the size */
   display: grid;
   gap: 10px;
-  grid: auto-flow var(--s)/repeat(2, var(--s));
+  grid: var(--s)/repeat(2, var(--s));
   place-items: center;
 }
 
