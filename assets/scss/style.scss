@@ -5,16 +5,13 @@
     gap: 10px;
     grid: auto-flow var(--s) / repeat(2, var(--s));
     place-items: center;
-    justify-content: center;
-    
     transform: rotate(45deg);
   }
   .gallery > img {
-    // width: 100%; 
+    width: 100%; 
     object-fit: cover;
-    
     transform: rotate(-45deg);
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 
-    width: 141%; /* 100%*sqrt(2) = 141% */
+    // width: 141%; /* 100%*sqrt(2) = 141% */
   }
